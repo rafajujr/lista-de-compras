@@ -14,7 +14,7 @@
   <table>
     <thead>
       <tr>
-        <th>#</th>
+        <th>Ord</th>
         <th>Item</th>
         <th>Status</th>
         <th>Ação</th>
@@ -30,7 +30,7 @@
             <input type="checkbox" (click)="riscarItem(elemento)" [checked]="elemento.status" value="{{elemento.status}}">
           </td>
           <td>
-            <span (click)="removerItem(elemento)">Remove</span>
+            <span class="remove" (click)="removerItem(elemento)">Apagar item</span>
           </td>
         </tr>
       } @empty {
