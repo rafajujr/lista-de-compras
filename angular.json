@@ -88,11 +88,16 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/material-design-icons/iconfont/material-icons.css",
+              "../node_modules/font-awesome/css/font-awesome.css"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "69deeb80-9c53-4630-8bd0-160923ca006c"
   }
 }

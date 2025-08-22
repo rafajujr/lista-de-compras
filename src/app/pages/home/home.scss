@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 10px;
+
+  .top {
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #4b4949
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      input {
+        flex: 1;
+        margin-right: 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        margin-left: 10px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+
+      .limpar {
+        padding: 10px 20px;
+        background-color: red;
+        margin-left: 10px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+
+
+  .lista {
+    width: 95%;
+    margin: 10px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    thead {
+      text-align: center;
+      background-color: #007bff;
+      color: black;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #b9afee;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.5);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.item-riscado {
+  text-decoration: line-through;
+}
